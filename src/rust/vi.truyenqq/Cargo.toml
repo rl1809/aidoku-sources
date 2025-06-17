@@ -1,5 +1,5 @@
 [package]
-name = "truyenqq"
+name = "vi.truyenqq"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,4 +8,3 @@ crate-type = ["cdylib"]
 
 [dependencies]
 aidoku = { git = "https://github.com/Aidoku/aidoku-rs" }
-wpcomics_template = { path = "../../template" }

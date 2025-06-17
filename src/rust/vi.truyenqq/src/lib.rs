@@ -1,4 +1,7 @@
 #![no_std]
+pub mod helper;
+pub mod template;
+
 use aidoku::{
 	error::Result,
 	prelude::*,
@@ -6,7 +9,7 @@ use aidoku::{
 	Chapter, DeepLink, Filter, FilterType, Listing, Manga, MangaPageResult, MangaStatus,
 	MangaViewer, Page,
 };
-use wpcomics_template::{helper::urlencode, template::WPComicsSource};
+use crate::{helper::urlencode, template::WPComicsSource};
 
 fn get_instance() -> WPComicsSource {
 	WPComicsSource {
